@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset = "UTF-8">
+ <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+ <title>Registracija</title>
+ <link rel="stylesheet" href="Css/style.css" />
+ <script type="text/javascript" src="Scripts/login.js"></script>
+</head>
+<body onload="ucitavanjeKorisnika()">
+ <main>
+ <div id = "sve">
+    <div id = "slika">
+	<div id = "nav">
+	</div>
+	</div>
+ </div>
+    <div class = "naslov">
+	   <div class = "plnaslov">
+	    <h1>Login</h1>
+	   </div>
+	<div class = "forma">
+	<form>
+	<div class="username">
+				<label>Korisnicko ime:</label>
+				<input type="text" name="username" id="username" placeholder="Unesi korisnicko ime" class="text">
+	</div>
+	<div class="password">
+				<label>Lozinka:</label>
+				<input type="password" name="password" id="password" placeholder="Unesi lozinku" class="text">
+	</div>
+	<br>
+	<button class="buttonRegistracija" onclick="proveriDaLiPostojiKorisnik()">Login</button>
+	<br>
+	<br>
+	<a href = "Registracija.html"> Nemas nalog? Registruj se</a>
+	</form>
+    </div>
+ 
+ </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset = "UTF-8">
+ <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+ <title>Registracija</title>
+ <link rel="stylesheet" href="Css/style.css" />
+ <script type="text/javascript" src="Scripts/registracija.js"></script>
+</head>
+<body onload="ucitavanjeKorisnika()">
+ <main>
+ <div id = "sve">
+    <div id = "slika">
+	<div id = "nav">
+	</div>
+	</div>
+ </div>
+    <div class = "naslov">
+	   <div class = "plnaslov">
+	    <h1>Registracija</h1>
+	   </div>
+	<div class = "forma">
+	<form>
+				<div class="username">
+				<label>Korisnicko ime:</label>
+				<input type="text" name="username" id="username" placeholder="Unesi korisnicko ime" class="text">
+				</div>
+				<div class="ime">
+				<label>Ime:</label>
+				<input type="text" name="ime" id="ime" placeholder="Unesi ime" class="text">
+				</div>
+				<div class="prezime">
+				<label>Prezime:</label>
+				<input type="text"  name="prezime" id="prezime" placeholder="Unesi prezime" class="text">
+				</div>
+				<div class="email">
+				<label>E-mail:</label>
+				<input type="text" name="email" id="email" placeholder="primer@gmail.com" class="text">
+				</div>
+				<div class="password">
+				<label>Lozinka:</label>
+				<input type="password" name="password" id="password" placeholder="Unesi lozinku" class="text">
+				</div>
+				<br>
+				<button class="buttonRegistracija" onclick="proveriKorisnik()">Registruj se!</button>
+				
+	</form>
+    </div>
+ 
+ </main>
+</body>
+</html>
