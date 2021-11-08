@@ -1,4 +1,3 @@
-//Funkcija za ucitavanje korisnika u listu korisnika(ukoliko je ta lista prazna)!
 function ucitavanjeKorisnika(){
     if(localStorage.getItem("korisnici")===null){
         let listaKorisnika = [
@@ -21,7 +20,6 @@ function ucitavanjeKorisnika(){
     izlogovanjeTrenutnogKorisnika = [];  
     window.localStorage.setItem("trenutniKorisnik",JSON.stringify(izlogovanjeTrenutnogKorisnika));
 }
-//Funkcija proverava da li su sva polja popunjena i ako jesu proverava da li korisnik postoji u listi korisnika
 function proveriDaLiPostojiKorisnik(){
     let lista = JSON.parse(window.localStorage.getItem("korisnici"));
     let korisnickoIme = document.getElementById("username").value;
