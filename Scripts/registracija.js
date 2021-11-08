@@ -32,7 +32,7 @@ function ucitavanjeKorisnika(){
     izlogovanjeTrenutnogKorisnika = [];  
     window.localStorage.setItem("trenutniKorisnik",JSON.stringify(izlogovanjeTrenutnogKorisnika));
 }
-//Funkcija koja proverava da li je korisnik uneo sve podatke i da li su ti podaci tacni!
+
 function proveriKorisnik(){
     let lista = JSON.parse(window.localStorage.getItem("korisnici"));
     let username = document.getElementById("username").value;
