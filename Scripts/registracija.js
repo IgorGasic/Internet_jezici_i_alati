@@ -1,4 +1,4 @@
-//funkcija proverava da li je korisnicko ime vec zauzeto i vraca True ili False u zavisnosti da li korisnik postoji ili ne  
+
 function korisnikPostoji(){
     let lista = JSON.parse(window.localStorage.getItem("korisnici"));
     let username = document.getElementById("username").value;
@@ -10,7 +10,6 @@ function korisnikPostoji(){
     return false;
 }
 
-//Funkcija za ucitavanje korisnika u listu korisnika(ukoliko je ta lista prazna)!
 function ucitavanjeKorisnika(){
     if(localStorage.getItem("korisnici")===null){
         let listaKorisnika = [
@@ -60,7 +59,7 @@ function proveriKorisnik(){
     window.alert(err);
 }   
 }
-//Funkcija koja proverava validnost email-a!
+
 function mailValidan(){
     let mail = document.getElementById("email").value;
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
